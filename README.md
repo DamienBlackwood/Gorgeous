@@ -1,50 +1,40 @@
-# Gorgeous
+# gorgeous
 
-A beautiful Obsidian theme built on elegant typography, smooth animations, and a thoughtful color system that works great in light or dark mode.
+my obsidian theme. serif headings, purple accent, dark as possible.
+still learning css and obsidian's theming system — used [@kepano's Minimal](https://github.com/kepano/obsidian-minimal) heavily as a reference for how to do things properly.
 
-## What's included
+---
 
-- Clean serif headers with sans-serif body text for a sophisticated look
-- Beautiful light and dark modes designed to be easy on the eyes
-- Smooth transitions that feel polished without being distracting
-- Easy color customization through simple CSS variables
-- Works seamlessly on desktop, tablet, and mobile
-- Built-in styles for Mermaid diagrams and dataview tables
+## what it looks like
 
-## Getting started
+- georgia serif headings, clean sans body text
+- really dark dark mode (the sidebar and editor are different shades so there's actual depth)
+- purple accent throughout — links, checkboxes, active items
+- blockquotes are just a quiet bar on the left, no box
+- h6 is uppercase and small, kind of like a label
 
-### Through Obsidian Community Themes
-1. Open Settings → Appearance → Themes
-2. Click "Browse" and search for "Gorgeous"
-3. Click Install, then Use
+## install
 
-### Manual installation
-Clone this repo into your vault's `.obsidian/themes` folder and select it in Settings.
+**community themes:** Settings → Appearance → Themes → Browse → search "Gorgeous"
 
-## Make it your own
+**manual:** clone this repo into `.obsidian/themes/` in your vault, then pick it in Settings → Appearance
 
-Want to change the accent color? Just edit these variables at the top of `theme.css`:
+## changing the accent color
+
+the whole color system is built around three variables at the top of `theme.css`:
 
 ```css
-:root {
-  --accent-h: 270;      /* Hue (0-360) */
-  --accent-s: 30%;      /* Saturation */
-  --accent-l: 58%;      /* Lightness */
-}
+--accent-h: 270;   /* hue — 270 is purple, 0 is red, 120 is green */
+--accent-s: 30%;   /* saturation */
+--accent-l: 58%;   /* lightness */
 ```
 
-Everything else adjusts automatically to match your new color.
+change the hue and everything updates automatically.
 
-## Compatibility
+## works on
 
-- Obsidian 1.9.0 and up
-- Works on Mac, Windows, Linux, iOS, and Android
-- Tested on light and dark system themes
+Obsidian 1.9.4+ · Mac · Windows · Linux · iOS · Android
 
-## Inspiration
+---
 
-This theme was developed with guidance from [@kepano's Minimal theme](https://github.com/kepano/obsidian-minimal) as a learning reference for best practices in theme design.
-
-## Creator
-
-Made by [Damien Blackwood](https://github.com/DamienBlackwood)
+made by [Damien Blackwood](https://github.com/DamienBlackwood)
